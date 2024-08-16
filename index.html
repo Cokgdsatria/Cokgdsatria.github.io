@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquires.css">
+</head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Cokorda Gd. Satria W.P</div>
+            <div>
+                <ul class="nav-link">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="Logo">Cokorda Gd. Satria W.P</div>
+            <div class="Hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">     
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+                <div class="menu-link">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container "> 
+               <img src="./Asset/foto diri sendiri.jpg" alt="Cokorda Gd. Satria W.P profile picture" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello semua, saya</p>
+                <h1 class="title">Satria</h1>
+                <p class="section__text__p2">Ilkomers 60 IPB University</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./Asset/CV.pdf')">Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div id="social-container">
+                    <img src="./Asset/Linkedin Icon.png" alt="Profile Linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/cokorda-gd-satria-widnyana-putra?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIlCa%2BumiRTOxRNefXPFrww%3D%3D'">
+                    <img src="./Asset/Logo IG.png" alt="Profile Instagram" class="icon" onclick="location.href='https://www.instagram.com/cokgedesatria_?igsh=MW5kaDh5ZW5jNmFnZQ%3D%3D&utm_source=qr'">
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./Asset/Foto diri 2.jpg" alt="Profile picture" class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-container">
+                        <div class="details-container">
+                            <img src="./Asset/Experience.png" alt="experience icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>Putra Omda Bali<br>Gebyar Nusantara IPB University</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./Asset/Education.png" alt="Education" class="icon">
+                            <h3>Education</h3>
+                            <p>SMAN Negeri 7 Denpasar <br>IPB University</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Mahasiswa IPB University tingkat pertama Fakultas Matematika dan Ilmu Pengetahuan Alam departement Ilmu 
+                            Komputer. Berpengalaman sebagai Ketua OSIS saat masih SMP dan SMA serta memiliki keinginan untuk terus 
+                            berkembang kedepannya</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./Asset/Arrow Icon.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Organisasi</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <h3>SMAN 7 Denpasar</h3>
+                                    <p>Ketua OSIS</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>Kader Pelestari Budaya</h3>
+                                    <p>Divisi Koor Wilayah</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>KMHD IPB</h3>
+                                    <p>Staff Divisi Sosling</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Kepanitian</h2>
+                        <div class="article-container">
+                            <article>
+                                <div>
+                                    <h3>KARMA 2024</h3>
+                                    <p>Ketua Pelaksana</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>ITTODAY 2024</h3>
+                                    <p>Divisi Pendanaan</p>
+                                </div>
+                            </article>
+                            <article>
+                                <div>
+                                    <h3>CPSC 2024</h3>
+                                    <p>Divisi Pendanaan</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./Asset/Arrow Icon.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#project'">
+            <img src="./Asset/Arrow Icon.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#project'">
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
